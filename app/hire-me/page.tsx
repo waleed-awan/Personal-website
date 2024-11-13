@@ -6,10 +6,10 @@ import Link from "next/link"
 
 export default function Component() {
   const handleDownload = () => {
-    const resumeUrl = "./Naveed_Islam.pdf"
+    const resumeUrl = "./Waleed_Awan.pdf"
     const link = document.createElement("a")
     link.href = resumeUrl
-    link.download = "Naveed_Islam_Resume.pdf"
+    link.download = "Waleed_Awan_Resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

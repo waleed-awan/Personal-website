@@ -51,7 +51,7 @@ export default function HireMe() {
           >
             <Image
               src="/business.svg"
-              alt="Naveed Islam"
+              alt="Waleed Awan"
               width={400}
               height={400}
               className="rounded-lg shadow-xl"
