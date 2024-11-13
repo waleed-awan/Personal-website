@@ -26,12 +26,12 @@ export default function Navbar() {
   ]
 
   return (
-    <nav
+    <div
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className=" waleed mx-auto px-4 sm:px-6 lg:px-24">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text">
@@ -39,7 +39,8 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -57,6 +58,7 @@ export default function Navbar() {
             </Link>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -74,6 +76,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -83,19 +86,19 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-colors duration-300"
+                  className="block px-4 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-colors duration-300"
                 >
                   {item.name}
                 </Link>
               ))}
               <Link
                 href="/hire-me"
-                className="block px-3 py-2 rounded-md text-base font-medium text-purple-600 hover:text-purple-700 hover:bg-purple-50 transition-colors duration-300"
+                className="block px-4 py-2 rounded-md text-base font-medium text-purple-600 hover:text-purple-700 hover:bg-purple-50 transition-colors duration-300"
               >
                 Hire Me
               </Link>
@@ -103,6 +106,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </div>
   )
 }

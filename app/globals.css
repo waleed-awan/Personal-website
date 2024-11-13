@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.waleed{
+  max-width: 100rem;
+}
