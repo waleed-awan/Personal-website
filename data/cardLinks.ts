@@ -1,0 +1,48 @@
+import { CgScreen } from "react-icons/cg";
+
+export const cardData = [
+    {
+      Icon: CgScreen,
+      title: "This is a title",
+      desc: "This is a desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt autem nam fugit distinctio aliquam maxime est dolorem beatae. Excepturi vel modi tenetur ratione eligendi sint repellendus saepe laudantium minus",
+      bgColor: "bg-[#FBEDE9]",
+      padd: "mt-[0px]",
+      textColor: "text-[#727288]",
+      titleColor: "text-[#000]",
+      iconSize: "text-[40px]",
+      iconColor: "text-[#6C42FF]",
+    },
+    {
+      Icon: CgScreen,
+      title: "This is a title",
+      desc: "This is a desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt autem nam fugit distinctio aliquam maxime est dolorem beatae. Excepturi vel modi tenetur ratione eligendi sint repellendus saepe laudantium minus",
+      bgColor: "bg-[#FAEBFF]",
+      padd: "mt-[100px]",
+      textColor: "text-[#727288]",
+      titleColor: "text-[#000]",
+      iconSize: "text-[40px]",
+      iconColor: "text-[#6C42FF]",
+    },
+    {
+      Icon: CgScreen,
+      title: "This is a title",
+      desc: "This is a desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt autem nam fugit distinctio aliquam maxime est dolorem beatae. Excepturi vel modi tenetur ratione eligendi sint repellendus saepe laudantium minus",
+      bgColor: "bg-[#6C42FF]",
+      padd: "mt-[200px]",
+      textColor: "text-[#fff]",
+      titleColor: "text-[#fff]",
+      iconSize: "text-[40px]",
+      iconColor: "text-[#fff]",
+    },
+    {
+      Icon: CgScreen,
+      title: "This is a title",
+      desc: "This is a desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt autem nam fugit distinctio aliquam maxime est dolorem beatae. Excepturi vel modi tenetur ratione eligendi sint repellendus saepe laudantium minus",
+      bgColor: "bg-[#FFFFFF]",
+      padd: "mt-[300px]",
+      textColor: "text-[#727288]",
+      titleColor: "text-[#000]",
+      iconSize: "text-[40px]",
+      iconColor: "text-[#6C42FF]",
+    },
+  ];
